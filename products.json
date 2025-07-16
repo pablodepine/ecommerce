@@ -3,22 +3,22 @@
     {
       "id": 1,
       "name": "Escova de dente",
-      "category": "higiene",
-      "prize": 3,
+      "category": "Higiene Bucal",
+      "price": 3,
       "stock": 100
     },
     {
       "id": 2,
-      "titulo": "Mouse Logitech",
-      "category": "eletronico",
-      "prize": 300,
+      "name": "Mouse Logitech",
+      "category": "Eletrônico",
+      "price": 300,
       "stock": 10
     },
     {
       "id": 3,
-      "titulo": "Cabo HDMI",
-      "category": "eletronico",
-      "prize": 55,
+      "name": "Cabo HDMI",
+      "category": "Eletrônico",
+      "price": 55,
       "stock": 30
     }
   ]

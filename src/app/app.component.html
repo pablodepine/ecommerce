@@ -1,1 +1,20 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<div class="d-flex gap-3">
+  @if(product$ | async; as products) { @for (product of products; track
+  product.name) {
+
+  <div class="card" style="width: 18rem">
+    <!-- <img src="..." class="card-img-top" alt="..." /> -->
+    <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <p class="card-text">Categoria: {{ product.category }}</p>
+      <p class="card-text">
+        Preço:
+        {{ product.price | currency : "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
+      </p>
+      <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+    </div>
+  </div>
+  } } @else {
+  <h1>Não há produtos disponíveis.</h1>
+  }
+</div>
